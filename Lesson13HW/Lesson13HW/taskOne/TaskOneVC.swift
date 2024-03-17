@@ -13,9 +13,7 @@ class TaskOneVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupTable()
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,16 +24,13 @@ class TaskOneVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let cell = UITableViewCell()
         cell.textLabel?.text = "Секция: \(indexPath.section), Ячейка: \(indexPath.row)"
         
-        
         return cell
     }
 }
-
 
 extension TaskOneVC {
     func setupTable() {
         tableView.delegate = self
         tableView.dataSource = self
     }
-    
 }

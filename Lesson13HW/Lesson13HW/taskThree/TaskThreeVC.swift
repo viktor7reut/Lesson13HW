@@ -26,9 +26,7 @@ class TaskThreeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupTable()
-        
     }
 }
 
@@ -52,13 +50,10 @@ extension TaskThreeVC: UITableViewDataSource {
             return cell ?? UITableViewCell()
         }
     }
-    
 }
 
 extension TaskThreeVC {
     func setupTable() {
         tableView.dataSource = self
     }
-    
 }
-

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TaskTwoVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TaskTwoVC: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -26,9 +26,7 @@ class TaskTwoVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupTable()
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,13 +41,10 @@ class TaskTwoVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
-    
 }
 
 extension TaskTwoVC {
     func setupTable() {
-        tableView.delegate = self
         tableView.dataSource = self
     }
-    
 }
